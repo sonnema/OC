@@ -4,7 +4,6 @@ body{
   	.navbar {
   	margin-bottom: 0;
   	background-color:#261e1e;
-  	/* background-color: #2d2d30; */
   	border: 0;
   	font-weight:bold;
   	font-size: 11px !important;
@@ -13,8 +12,6 @@ body{
 	}
 
 	.navbar li a, .navbar .navbar-brand { 
-  	/* color: #d5d5d5 !important; 
-  	color: #f4bb27 !important;*/
   	color: #ffffff !important;
 	}
 	.navbar-nav>li>a {
@@ -27,7 +24,6 @@ body{
     height: auto;
 	}
 
-	/* On hover, the links will turn white */
 	.navbar-nav li a:hover {
   	color: #fff !important; 
   	padding-bottom:3px;
@@ -39,13 +35,11 @@ body{
   	color: #f4bb27 !important;
   	background-color:transparent !important;
 	}
-	/* The active link */
 	.navbar-nav li.active a:hover {
   	font-weight:700;
   	border-bottom:none;
 	}
 
-	/* Remove border color from the collapsible button */
 	.navbar-default .navbar-toggle {
  	border-color: transparent;
 	}
