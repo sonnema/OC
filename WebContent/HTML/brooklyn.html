@@ -6,42 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  	body{
-  	color:#1d2130;
+  	html, body{
+  	font-size:16px;
+  	color:#fff;
+  	font-family: 'Neucha', cursive;
+  	letter-spacing:0.05em;
   	}
+  	.banner{
+  	background-color:#f4bb27;height:auto;padding-top:1em;
+  	}
+  	.banner h1{
+  	font-family: 'Dancing Script', cursive;border: 0.15em solid #261e1e;border-radius:0.3em;
+  	color:#f4bb27;background-color:white;font-size:2em;font-weight:bold;letter-spacing: 2px;
+  	position:relative;padding:20px 0 0 0;margin-top:70px;}
   	.navbar {
   	margin-bottom: 0;
   	background-color:#261e1e;
-  	border: 0;
+  	border: none;
   	font-weight:bold;
-  	font-size: 11px !important;
   	letter-spacing: 4px;
   	opacity: 0.9;
-	}
-
-	.navbar li a, .navbar .navbar-brand { 
+  	}
+    .navbar li a, .navbar .navbar-brand { 
   	color: #ffffff !important;
 	}
 	.navbar-nav>li>a {
-    line-height: 39px;
-    font-size:large;
-    padding-top:10px !important;
-    padding-bottom:1px !important;
+    line-height: 56px;
+    font-size:1.1em;
+    padding-top:11px;
+    padding-bottom:1px;
 	}
-	.navbar-brand>img {
+	.navbar-brand > img {
     margin-top: -15px;
     margin-left: -13px;
     height: auto;
 	}
+	.navbar-left{
+	margin-top:2px ;
+	}
 
 	.navbar-nav li a:hover {
   	color: #fff !important; 
-  	padding-bottom:3px;
+  	padding-bottom:0.01em !important;
   	font-weight:750;
-  	border-bottom:1.5px solid #fff;
+  	border-bottom:2px solid #fff;
   	}
 
 	.navbar-nav li.active a {
@@ -56,11 +69,25 @@
 	.navbar-default .navbar-toggle {
  	border-color: transparent;
 	}
+	
+	.navbar-right{
+	margin-right:0.5em;
+	}
+	.social{
+	color:white;
+	/* font-size:3em; */
+	text-decoration:none;
+	}
+	.social:hover{
+	color:#f4bb27;
+	text-decoration:none;
+	border-bottom-color:transparent !important;
+	}
 	.container {
   	padding: 80px 120px;
   	}
 	.carousel-inner{
-	padding-top:69px;
+	/* padding-top:69px; */
 	}
 	.carousel-inner img{
   	width:100%;
@@ -86,6 +113,7 @@
 	}
 	.mission{
 	padding:0;
+	font-size:0.91em;
 	}
 	li{
 	list-style:none;
@@ -107,8 +135,9 @@
 	color:white;
 	}
 	h5 {
-	font-size:160%;
-	font-weight:650;
+	font-size:120%;
+	/* font-family:cursive; */
+	font-weight:600;
 	padding-bottom:0.5em;
 	color:white;
 	}
@@ -118,11 +147,11 @@
 	}
 	#about {
  	padding-top:80px;
- 	font-family: 'Karla', sans-serif;  
+ 	/* font-family: 'Karla', sans-serif; */  
   	background-color:#f4bb27;
   	height:auto;
   	min-height:800px;
-  	font-size:1em;
+  	/* font-size:1.2em; */
   	line-height:1.5em;
   	color:white;
   	width:100%;
@@ -132,14 +161,17 @@
 	padding-bottom:0.1em;
 	border-bottom:0.1em solid #fff;
 	}
+	#about p{
+	font-size:1.2em;
+	}
+	
 	#films{
 	background-color:#292c3b;
 	color:#ffffff;
 	padding-top:80px;
- 	font-family: 'Karla', sans-serif;  
+ 	/* font-family: 'Karla', sans-serif; */  
   	height:auto;
   	min-height:800px;
-  	font-size:1.5em;
   	line-height:1.5em;
   	width:100%;
   	font-weight:600;
@@ -165,11 +197,10 @@
     }
     #register {
  	padding-top:80px;
- 	font-family: 'Karla', sans-serif;  
+ 	/* font-family: 'Karla', sans-serif;   */
   	background-color:#f4bb27;
   	height:auto;
   	min-height:800px;
-  	font-size:0.8em;
   	line-height:1.5em;
   	color:#f4bb27;
   	width:100%;
@@ -182,7 +213,7 @@
   	border-color: inherit;
   	-webkit-box-shadow: none;
   	box-shadow: none;
-	}
+  	}
   	.dropdownHead{
 	color:#261e1e;
 	font-size: 1.5em;
@@ -215,16 +246,16 @@
 	.btn:hover{
 	background-color:#fff;
 	color:#f4bb27;
+	font-size:1.1em;
 	text-transform:uppercase;
 	border:0.2em solid #f4bb27;
 	}
 	#venue {
  	padding-top:80px;
- 	font-family: 'Karla', sans-serif;  
+ 	/* font-family: 'Karla', sans-serif; */  
   	background-color:#292c3b;
   	height:auto;
   	min-height:800px;
-  	font-size:1em;
   	line-height:1.5em;
   	color:white;
   	width:100%;
@@ -233,35 +264,95 @@
 	#venue h5{
 	color:#f4bb27;
 	border-bottom:0.1em solid #f4bb27;
-	font-size:1.2em;
 	}
 	#footer{
 	background-color:#f4bb27;
 	color:#ffffff;
 	padding-top:10px;
- 	font-family: 'Karla', sans-serif;  
+ 	/* font-family: 'Karla', sans-serif; */  
   	height:auto;
-  	min-height:10px;
+  	max-height:120px;
   	font-size:1.5em;
   	line-height:1.5em;
   	width:100%;
   	font-weight:600;
 	}
-	.navbar-right{
-	margin-right:0.5em;
+	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  		color: #292c3b !important;
+  		font-size:0.8em;
+  	}
+	input::-moz-placeholder { /* Firefox 19+ */
+  		color: #292c3b !important;
+  		font-size:0.8em;	
 	}
-	.social{
-	color:white;
-	/* margin-top:0.5em; */
-	text-decoration:none;
+	input:-ms-input-placeholder { /* IE 10+ */
+  		color: #292c3b !important;
+  		font-size:0.8em;
 	}
-	.social:hover{
+	input:-moz-placeholder { /* Firefox 18- */
+  		color: #292c3b !important;
+  		font-size:0.8em;
+	}
+	.chngOverflow{
+	display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+	}
+	.btn{
+	font-size:1.15em;
+	white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+	}
+	.btn:hover{
+	overflow:visible;
+	white-space:normal;
+	}
+	.dropdown-menu li a{
 	color:#f4bb27;
-	text-decoration:none;
+	background-color:white;
+	}
+	.dropdown-menu li a:hover{
+	color:#fff;
+	background-color:#f4bb27;
+	} 
+	#regModal,#regSuccess,#regCancel{
+	color:#f4bb27;
+	font-size:1.4em;
+	} 
+	h4{
+	color:#f4bb27;
+	font-size:1.4em;
+	}
+	.modal-header .close{
+	color:#f4bb27;
+	opacity:0.8;
+	}
+	.modal-header{
+	color:#f4bb27;
+	border-bottom: 0.1em solid #f4bb27;
 	}
 	
-	@media all and (max-width:800px)
+	.modal-footer{
+	border-top: 0.1em solid #f4bb27;
+	}
+	.modal-footer.row{
+	margin:0;
+	}
+	#regModal .btn{
+	width:25%;
+	}
+	
+	@media all and (max-width:1000px)
 	{
+	.banner{
+  	height:auto;padding-top:0.1em;
+  	}
+  	.banner h1{
+  	font-size:1.4em;letter-spacing: 2px;
+  	padding:20px 0 0 0;margin-top:70px;}
+  	
 	.navbar-brand > img {
     margin-top: -15px;
     margin-left: -15px;
@@ -269,14 +360,15 @@
 	}
 	.navbar-nav>li>a {
     line-height: 20px;
-    font-size: small;
+    font-size: 16px;
 	}
 	.carousel-inner{
-	padding-top:50px;
+	/* padding-top:50px; */
 	}
 	#about,#films, #register,#venue{
 	font-size:110%;
 	}
+	
 	h3{
 	font-size:125%;
 	font-weight:700;
@@ -295,10 +387,9 @@
 	font-size:1.15em;
 	}
 	.register{
-	margin-top:1em;
-	font-size:1.4em;
-	padding:0.81em 0;
-	font-size:1.5em;
+	margin-top:0.8em;
+	font-size:1.2em;
+	padding:0.5em 0;
 	}
 	.dropdownHead{
 	font-size:1.15em;
@@ -306,6 +397,7 @@
 	.social{
 	font-size:1em;
 	font-weight:300;
+	padding:10px 2px !important;
 	}
 	.social:hover{
 	color:#292c3b;
@@ -315,21 +407,51 @@
  	padding-bottom:35px;
  	font-size:1.2em;
  	}
+ 	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  		font-size:0.6em;
+  	}
+	input::-moz-placeholder { /* Firefox 19+ */
+  		font-size:0.6em;	
+	}
+	input:-ms-input-placeholder { /* IE 10+ */
+  		font-size:0.6em;
+	}
+	input:-moz-placeholder { /* Firefox 18- */
+  		font-size:0.6em;
+	}
+	#regModal,#regSuccess,#regCancel{
+	color:#f4bb27;
+	font-size:1em;
+	width:70%;
+	} 
+	h4{
+	color:#f4bb27;
+	font-size:1em;
+	}
+	.modal-header .close{
+	color:#f4bb27;
+	opacity:0.4;
+	}
 	}
 	
 	@media all and (min-width:1000px) and (max-width:1200px)
 	{
+	.banner h1{
+  	font-size:1.8em;
+  	padding:20px 0 0 0;
+  	margin-top:70px;
+  	}
 	.navbar-brand > img {
     margin-top: -15px;
     margin-left: -15px;
-    height: 60px;
+    height: 50px;
     }
     .navbar-nav>li>a {
     line-height: 30px;
     font-size: medium;
 	}
 	.carousel-inner{
-	padding-top:60px;
+	/* padding-top:60px; */
 	}
 	h3{
 	font-size:150%;
@@ -346,14 +468,13 @@
 	font-size:1em;
 	}
 	.btn{
-	font-size:1.25em;
+	font-size:1.15em;
 	padding-left:0.3em;
 	}
 	.register{
 	margin-top:1em;
 	font-size:1.4em;
-	padding:1.2em 0;
-	font-size:1.5em;
+	padding:0.5em 0;
 	}
 	.dropdownHead{
 	font-size:1.5em;
@@ -361,6 +482,7 @@
 	.social{
 	font-size:1.2em;
 	font-weight:300;
+	padding: 8px 3px !important;
 	}
 	.social:hover{
 	color:#292c3b;
@@ -370,40 +492,70 @@
  	padding-bottom:35px;
  	font-size:1.2em;
  	}
- 	
+ 	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  		color: #292c3b !important;
+  		font-size:0.8em;
+  	}
+	input::-moz-placeholder { /* Firefox 19+ */
+  		color: #292c3b !important;
+  		font-size:0.8em;	
+	}
+	input:-ms-input-placeholder { /* IE 10+ */
+  		color: #292c3b !important;
+  		font-size:0.8em;
+	}
+	input:-moz-placeholder { /* Firefox 18- */
+  		color: #292c3b !important;
+  		font-size:0.8em;
+	}
+ 	#regModal,#regSuccess,#regCancel{
+	color:#f4bb27;
+	font-size:1em;
+	width:70%;
+	} 
+	h4{
+	color:#f4bb27;
+	font-size:1.1em;
+	}
+	.modal-header .close{
+	color:#f4bb27;
+	opacity:0.6;
+	}
 	}
   </style>
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#home"><img src="../img/BOFF_Logo.png" alt="Brooklyn Outdoor Film Festival"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#films">FILMS</a></li>
-        <li><a href="#register">REGISTER</a></li>
-        <li><a href="#venue">VENUE</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right visible-md visible-lg">
-      	<li><a class="social" title="Send us an email" target="_blank" href="mailto:@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
-      	<li><a class="social" title="Connect with us on facebook" target="_blank" href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
-      	<li><a class="social" title="Connect with us on twitter" target="_blank" href="https://www.twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
-      </ul>
-      
-    </div>
-  </div>
+ <div id="headerDetails" class="container-fluid banner text-center">
+	<h1><p>Free film festival @ Brooklyn Bridge Park !!</p><p> Aug 5 to Aug 8</p></h1>
+ </div>
+ <nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+    			<span class="icon-bar"></span> 
+      		</button>
+      		<a class="navbar-brand" href="#home"><img src="../img/BOFF_Logo.png" alt="Brooklyn Outdoor Film Festival"></a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class="nav navbar-nav navbar-left">
+        		<li><a href="#home">HOME</a></li>
+        		<li><a href="#about">ABOUT</a></li>
+        		<li><a href="#films">FILMS</a></li>
+        		<li><a href="#register">REGISTER</a></li>
+        		<li><a href="#venue">VENUE</a></li>
+      		</ul>
+      		<ul class="nav navbar-nav navbar-right visible-md visible-lg">
+      			<li><a class="social" title="Send us an email" target="_blank" href="mailto:@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a></li>
+      			<li><a class="social" title="Connect with us on facebook" target="_blank" href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a></li>
+      			<li><a class="social" title="Connect with us on twitter" target="_blank" href="https://www.twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a></li>
+      		</ul>
+    	</div>
+  	</div>
 </nav>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -411,7 +563,6 @@
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
   <div class="carousel-inner"> 
     <div class="item active">
       <img src="../img/slide1.jpg" alt="August 5, 2019">
@@ -442,7 +593,6 @@
     </div>
   </div>
 
-  <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
@@ -452,6 +602,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <div id="about" class="container">
   <h3 class="text-center">The  Brooklyn Outdoor Film Festival</h3>
   <h5 class="text-center">Enjoy watching <em><b>FREE</b></em> movies from <b>5th August to 8th August</b> at <b>Brooklyn Bridge Park</b>!!</h5>
@@ -465,7 +616,7 @@
   	<br>
   	<span><b>Our Mission</b></span>
   	<br>
-  	<ul class="mission">
+  	<ul class="mission small">
   		<li class="mission">To provide a public forum in Brooklyn in order to advance public interest in films and the independent production of films.</li> 
   		<li class="mission">To draw worldwide attention to Brooklyn as a center for cinema.</li>
   		<li class="mission">To encourage the rights of all Brooklyn residents to access and experience the power of independent filmmaking.</li>
@@ -474,6 +625,7 @@
   	<br>
   </div>	
 </div>
+
 <div id="films" class="container">
   <h3 class="text-center">Schedule of Films</h3>
   <h5 class="text-center"><ul class="list-inline small"><li>5th - 8th August</li><li class="hidden-xs"> | </li> <li>6PM - 12:00</li></ul></h5>  
@@ -663,59 +815,60 @@
         <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
         	<div class="panel panel-default">
         		<div class="panel-body">
-        			<form>
-			    		<div class="row">
+        			<form id="regForm">
+        				<div class="row">
 			    			<div class="col-xs-12 col-sm-12 col-md-12">
 			    				<div class="form-group">
-			               			<input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+			    					<input type="text" name="first_name" id="validationDefault01" class="form-control input-sm" placeholder="First Name" pattern="[A-Za-z]+" title="Name should only contain letters." required >
 			    				</div>
 			    			</div>
 			    			<div class="col-xs-12 col-sm-12 col-md-12">
 			    				<div class="form-group">
-			    					<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+			    					<input type="text" name="last_name" id="last_name" class="form-control input-sm" pattern="[A-Za-z]+" placeholder="Last Name" required title="Name should only contain letters." >
 			    				</div>
 			    			</div>
 			    		</div>
 			    		<div class="form-group">
-			    			<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" required >
 			    		</div>
 			    		<div class="row"><div class="col-md-12 dropdownHead"><b>Days and time you want to register for : </b></div></div>
 			    		<br>
 		    			<div id="datetime" class="row">
 		    				<div class="col-md-3 col-sm-6 col-xs-12 dropdown">
-		    					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">August 5, 2019 <span class="caret"></span></button>
+		    					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">August 5, 2019 <span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Mary Poppins Return, 6PM</a></li>
-									<li><a href="#">A Star is Born, 8PM</a></li>
-									<li><a href="#">Ralph Breaks the Internet, 10PM</a></li>
+									<li><a href="#register" data-value="Mary Poppins Return, 6PM">Mary Poppins Return, 6PM</a></li>
+									<li><a href="#register" data-value="A Star is Born, 8PM">A Star is Born, 8PM</a></li>
+									<li><a href="#register" data-value="Ralph Breaks the Internet, 10PM">Ralph Breaks the Internet, 10PM</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 dropdown">
-		    					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">August 5, 2019 <span class="caret"></span></button>
+		    					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">August 6, 2019 <span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Aquaman, 6PM</a></li>
-									<li><a href="#">Annihilation, 8PM</a></li>
-									<li><a href="#">Roma, 10PM</a></li>
+									<li><a href="#register" data-value="Aquaman, 6PM">Aquaman, 6PM</a></li>
+									<li><a href="#register" data-value="Annihilation, 8PM">Annihilation, 8PM</a></li>
+									<li><a href="#register" data-value="Roma, 10PM">Roma, 10PM</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 dropdown">
-								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">August 7, 2019 <span class="caret"></span></button>
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">August 7, 2019 <span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Incredibles 2, 6PM</a></li>
-									<li><a href="#">Black Panther, 8PM</a></li>
-									<li><a href="#">Eight Grade, 10PM</a></li>
+									<li><a href="#register" data-value="Incredibles 2, 6PM">Incredibles 2, 6PM</a></li>
+									<li><a href="#register" data-value="Black Panther, 8PM">Black Panther, 8PM</a></li>
+									<li><a href="#register" data-value="Eight Grade, 10PM">Eight Grade, 10PM</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 dropdown">
-								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">August 8, 2019 <span class="caret"></span></button>
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">August 8, 2019 <span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Spider Man, 6PM</a></li>
-									<li><a href="#">Crazy Rich Asians,  8PM</a></li>
-									<li><a href="#">The Favorite, 10PM</a></li>
+									<li><a href="#register" data-value="Spider Man, 6PM">Spider Man, 6PM</a></li>
+									<li><a href="#register" data-value="The Favorite, 10PM">Crazy Rich Asians, 8PM</a></li>
+									<li><a href="#register" data-value="The Favorite, 10PM">The Favorite, 10PM</a></li>
 								</ul>
 							</div>
 						</div>
 						<input type="submit" value="Register" class="btn btn-block register">
+						<!-- <input type="submit" value="Register" class="btn btn-block register" onsubmit="openModal()"> -->
 		    		</form>
 		    	</div>
 	    	</div>
@@ -729,7 +882,8 @@
       		<h5 class="text-center">Brooklyn, The City </h5>
       		<br>
       		<a title="Click to go to Brooklyn city's official website" target="_blank" href="http://www.brooklyn-usa.org/"><img src="../img/Brooklyn.jpg" class="img-fluid venue" alt="Brooklyn City"></a>
-      		<p class="para text-left">Brooklyn is the most populous borough of New York City, with a census-estimated 2,648,771 residents in 2017. Named after the Dutch village of Breukelen, it borders the borough of Queens, at the western end of Long Island. Brooklyn also has several bridge connections to the boroughs of Manhattan (across the East River) and Staten Island (across the Verrazzano Narrows Bridge). Since 1896, the borough has been coterminous with Kings County, the most populous county in the U.S. state of New York and the second-most densely populated county in the United States, after the county of New York (which is coextensive with the borough of Manhattan). Click <a target="_blank" style="color:#f4bb27;" href= "https://en.wikipedia.org/wiki/Brooklyn"> here </a> for full article on Wikipedia.</p>
+      		<p class="para text-left hidden-xs hidden-sm">Brooklyn is the most populous borough of New York City, with a census-estimated 2,648,771 residents in 2017. Named after the Dutch village of Breukelen, it borders the borough of Queens, at the western end of Long Island. Brooklyn also has several bridge connections to the boroughs of Manhattan (across the East River) and Staten Island (across the Verrazzano Narrows Bridge). Since 1896, the borough has been coterminous with Kings County, the most populous county in the U.S. state of New York and the second-most densely populated county in the United States, after the county of New York (which is coextensive with the borough of Manhattan). Click <a target="_blank" style="color:#f4bb27;" href= "https://en.wikipedia.org/wiki/Brooklyn"> here </a> for full article on Wikipedia.</p>
+        	<p class="para text-left visible-xs visible-sm">Brooklyn is the most populous borough of New York City, with a census-estimated 2,648,771 residents in 2017. <p>Click <a target="_blank" style="color:#f4bb27;" href= "https://en.wikipedia.org/wiki/Brooklyn"> here </a> for full article on Wikipedia.</p></p>
         	<a class="trailer" target="_blank" href="https://www.youtube.com/watch?v=tg52up16eq0">Watch a video on the city</a>
         	<p>Check out the offical website of Brooklyn <a target="_blank" style="color:#f4bb27;" href="http://www.brooklyn-usa.org/"> here </a></p>
         </div>
@@ -737,7 +891,8 @@
       		<h5 class="text-center">Brooklyn Bridge Park </h5>
       		<br>
       		<a title="Click to go to Brooklyn Bridge Park's official website" target="_blank" href="https://www.brooklynbridgepark.org/"><img src="../img/BrooklynBridgePark.jpg" class="img-fluid venue" alt="Brooklyn Bridge Park"></a>
-      		<p class="para text-left">Brooklyn Bridge Park is an 85-acre (34 ha) park on the Brooklyn side of the East River in New York City. Designed by landscape architecture firm Michael Van Valkenburgh Associates, the park has revitalized 1.3-mile (2.1 km) of Brooklyn's post-industrial waterfront from Atlantic Avenue in the south, under the Brooklyn Heights Promenade and past the Brooklyn Bridge, to Jay Street north of the Manhattan Bridge.[1] The site includes Brooklyn Piers 1–6, the historic Fulton Ferry Landing, and the preexisting Empire–Fulton Ferry and Main Street Parks. Two Civil War-era structures, Empire Stores and the Tobacco Warehouse, will also be integrated into the park. After the city and state signed a joint agreement in 2002, site planning and project funding proceeded, with construction started in 2008 using land reclaimed using soil from the new World Trade Center site. Click <a target="_blank" style="color:#f4bb27;" href="https://en.wikipedia.org/wiki/Brooklyn_Bridge_Park"> here </a> for full article on Wikipedia.</p>
+      		<p class="para text-left hidden-xs hidden-sm">Brooklyn Bridge Park is an 85-acre (34 ha) park on the Brooklyn side of the East River in New York City. Designed by landscape architecture firm Michael Van Valkenburgh Associates, the park has revitalized 1.3-mile (2.1 km) of Brooklyn's post-industrial waterfront from Atlantic Avenue in the south, under the Brooklyn Heights Promenade and past the Brooklyn Bridge, to Jay Street north of the Manhattan Bridge. The site includes Brooklyn Piers 1–6, the historic Fulton Ferry Landing, and the preexisting Empire–Fulton Ferry and Main Street Parks. Two Civil War-era structures, Empire Stores and the Tobacco Warehouse, will also be integrated into the park. Click <a target="_blank" style="color:#f4bb27;" href="https://en.wikipedia.org/wiki/Brooklyn_Bridge_Park"> here </a> for full article on Wikipedia.</p>
+        	<p class="para text-left visible-xs visible-sm">Brooklyn Bridge Park is an 85-acre (34 ha) park on the Brooklyn side of the East River in New York City. Designed by landscape architecture firm Michael Van Valkenburgh Associates.<p> Click <a target="_blank" style="color:#f4bb27;" href="https://en.wikipedia.org/wiki/Brooklyn_Bridge_Park"> here </a> for full article on Wikipedia.</p></p>
         	<a class="trailer" target="_blank" href="https://www.brooklynbridgepark.org/blog/video/a-day-in-brooklyn-bridge-park">Watch a video on "A Day in the Brooklyn Bridge Park"</a>
         	<p>Check out the offical website of Brooklyn Bridge Park<a target="_blank" style="color:#f4bb27;" href="https://www.brooklynbridgepark.org/"> here </a></p>
         </div>	 
@@ -750,26 +905,109 @@
       	</div>	
    	</div>
    	<div class="row">
- 		<div class="col-sm-offset-4 col-sm-6 col-xs-offset-4 col-xs-6 ">
+ 		<div class="col-sm-offset-5 col-sm-7 col-xs-offset-2 col-xs-10 ">
  			<ul class="nav navbar-nav visible-xs visible-sm list-inline">
- 				<li><a class="social" title="Send us an email" href="@mailto:gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+ 				<li class="col-xs-3"><a class="social" title="Send us an email" href="@mailto:gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
       			</a></li>
-      			<li><a class="social" title="Connect with us on facebook" target="_blank" href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
- 				<li><a class="social" title="Connect with us on twitter" target="_blank" href="https://www.twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+      			<li class="col-xs-3"><a class="social" title="Connect with us on facebook" target="_blank" href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+ 				<li class="col-xs-3"><a class="social" title="Connect with us on twitter" target="_blank" href="https://www.twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
  			</ul>
       	</div>	
    	</div>
  </div>
+ <div id="regModal" class="modal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <a href="#" data-dismiss="modal" class="close"><span>x</span></a>
+             <h4>Are you sure</h4>
+        </div>
+        <div class="modal-body">
+             <p>Do you want to submit the form?</p>
+        </div>
+        <div class="modal-footer row">
+          <a href="#" id="btnYes" class="btn confirm col-md-offset-3 col-md-2 col-xs-12 col-sm-12">Yes</a>
+          <a href="#" id="btnNo" data-dismiss="modal" class="btn secondary col-md-2 col-xs-12 col-sm-12">No</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="regSuccess" class="modal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+ 		<div class="modal-header">
+            <a href="#" data-dismiss="modal" class="close"><span>x</span></a>
+             <h4>Congratulations!!</h4>
+        </div>
+        <div class="modal-body" style="color:#f4bb27;">
+             <p>You registered successfully.</p>
+        </div>
+  	</div>
+  </div>		
+</div>
+<div id="regCancel" class="modal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+ 		<div class="modal-header">
+            <a href="#" data-dismiss="modal" class="close"><span>x</span></a>
+             <h4>Changed your mind??</h4>
+        </div>
+        <div class="modal-body" style="color:#f4bb27;">
+             <p>Not registered.</p>
+        </div>
+  	</div>
+  </div>		
+</div>
+ 
 <script>
 $(function() {
 	  $(document).click(function (event) {
 	    $('.navbar-collapse').collapse('hide');
 	  });
 	});
-$(document).on('click', '.close', function () {
+	$(document).on('click', '.close', function () {
      $(this).parent('div').fadeOut();
- });
- 
+ 	});
+	$(".dropdown-menu li a").click(function(){
+	  
+	  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+	  $(this).parents(".dropdown").find('.btn').addClass('chngOverflow');
+	}); 
+	
+	$('#regForm').on('submit', function(e){
+	  var month = 'August';
+	  var count = 0;
+	  var dropdownMenuUpd = [];
+	  dropdownMenuUpd[0] = $('#datetime .dropdown:nth-child(1) button');
+	  dropdownMenuUpd[1] = $('#datetime .dropdown:nth-child(2) button');
+	  dropdownMenuUpd[2] = $('#datetime .dropdown:nth-child(3) button');
+	  dropdownMenuUpd[3] = $('#datetime .dropdown:nth-child(4) button');
+		
+	  for(var j=0;j<4;j++)		  
+	  {
+		  var inputval = dropdownMenuUpd[j].text();
+		  if(inputval.indexOf(month) >= 0)
+		  		count++;
+	  }	  
+	  if(count > 3) {
+		  alert("You haven't selected any movie shows yet!!");
+	  }
+	  else
+	  {
+		  $('#regModal').modal('show');
+	  }		  
+	  e.preventDefault();
+	});
+$('#btnYes').on('click', function(e){
+	  $('#regModal').modal('hide');
+	  $('#regSuccess').modal('show');
+	  e.preventDefault();
+	});
+$('#btnNo').on('click', function(e){
+	$('#regModal').modal('hide');
+	$('#regCancel').modal('show');
+	e.preventDefault();
+	});
  </script>
 </body>
 </html>
